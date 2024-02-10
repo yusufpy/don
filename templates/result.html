@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Anomaly Detection Result</h1>
+    <p>Anomaly Score: {{ anomaly_score }}</p>
+    <p>Is Anomaly: {{ is_anomaly }}</p>
+</body>
+</html>

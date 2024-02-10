@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Anomaly Detection</h1>
+    <form action="/predict" method="post">
+        <label for="source_ip">Source IP Address:</label><br>
+        <input type="text" id="source_ip" name="source_ip"><br>
+        <label for="user_identity">User Identity Type:</label><br>
+        <input type="text" id="user_identity" name="user_identity"><br>
+        <label for="error_code">Error Code:</label><br>
+        <input type="text" id="error_code" name="error_code"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
